@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+body {
+  background-image: url('./image/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2#clock {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: 'Rubik';
+  font-size: 90pt;
+  margin-bottom: 5px;
+}
+
+.user_management {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+input.inputBox {
+  font-family: 'Rubik';
+  padding: 10px 30px;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid rgb(128, 128, 128);
+}
+
+#draw_user {
+  font-weight: 500;
+  font-size: 20pt;
+}
