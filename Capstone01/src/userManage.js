@@ -1,6 +1,7 @@
 const inputBox = document.getElementById('inputBox');
 const drawUser = document.getElementById('draw_user');
 const div = document.querySelector('.user_management');
+const logoutBtn = document.getElementById('logout');
 
 let name;
 
@@ -17,8 +18,14 @@ const validate = () => {
   if (localStorage.getItem('name')) {
     const name = localStorage.getItem('name');
     drawUserName(name);
-  }
+  }    
 };
+
+
+const getLogout = () => {
+  localStorage.removeItem('name');
+  location.reload(true);
+}
 
 
 const saveUserInLocalDB = name => {
@@ -35,8 +42,9 @@ const drawUserName = name => {
 const userManage_init = () => {
   validate();
   inputBox.addEventListener('change', btnEvent);
+  logoutBtn.addEventListener('click', getLogout);
   // 1. 이벤트 트리거, 2. 달아줄 이벤트 함수
-}
+} 
 
 
 userManage_init();

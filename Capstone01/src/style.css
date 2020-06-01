@@ -39,3 +39,11 @@ input.inputBox {
   font-weight: 500;
   font-size: 20pt;
 }
+
+.todo_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: thistle;
+}
