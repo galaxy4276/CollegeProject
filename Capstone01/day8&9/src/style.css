@@ -1,0 +1,28 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+li button:first-child {
+  margin-left: 15px;
+}
+
+.mainForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid grey;
+  padding: 10px 15px;
+  outline-style: none;
+}
+
