@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet", href="./src/style.css"> <!-- CSS -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <button type="button", id="logout"> 로그 아웃 </button>
+      <h2 id="clock"></h2>
+      
+      <div class="user_management">
+        <input type="text", id="inputBox", placeholder="Write your Name..">
+        <div class="draw_user_wrapper">
+          <p id="draw_user"></p>
+        </div>
+      </div>
+
+      <div class="todo_wrapper">
+        <div class="todo_box">
+          <input type="text", id="todo_inputBox", placeholder="Write To Do..">
+          <div class="content_list">
+            <div class="pending">
+              <p>Pending</p>
+              <ul class="pending_content">
+              </ul>
+            </div>
+            <div class="finished">
+              <p>Finished</p>
+              <ul class="finished_content">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <script src="./src/clock.js"></script>
+    <script src="./src/userManage.js"></script>
+    <script src="./src/todo.js"></script>
+  </body>
+</html>
